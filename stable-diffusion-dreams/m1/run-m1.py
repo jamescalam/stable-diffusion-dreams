@@ -132,7 +132,7 @@ def main(
         # args you probably want to change
         prompts = [
             "a waterfall in the middle of a lush rainforest",
-            "a fast moving stream twisting and turning through a rainforest"
+            "a fast moving stream twisting and turning through a rainforest",
             "a gentle stream running by rice paddies in the countryside"
         ], # prompts to dream about
         seeds=[243, 523],
@@ -200,7 +200,6 @@ def main(
             generator=torch.Generator(device="cpu").manual_seed(seeds[p]),
             device=torch_device
         )
-
         for i, t in enumerate(np.linspace(0, 1, num_steps)):
             print("dreaming... ", frame_index)
 
