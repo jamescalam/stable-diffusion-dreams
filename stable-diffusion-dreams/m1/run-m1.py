@@ -38,7 +38,6 @@ def diffuse(
         eta,
     ):
     torch_device = cond_latents.get_device()
-    print(f"torch_device: {torch_device}")
     cond_latents.to("mps")
     torch_device = "mps"
 
